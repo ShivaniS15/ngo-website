@@ -1,0 +1,207 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4CAF50;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+.home-header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.home-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.home-subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 1rem auto 2rem auto;
+}
+
+.home-btn {
+  background-color: #ffffff;
+  color: #4CAF50;
+  border: 2px solid white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #ffffff;
+  color: #388e3c;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.home-image {
+  margin-top: 2rem;
+}
+
+.home-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About Section */
+.about-section {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-section .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Volunteer Form */
+.volunteer-section {
+  background-color: #eaf4ea;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.volunteer-section .container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.volunteer-form input,
+.volunteer-form select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.volunteer-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.volunteer-form button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .home-header {
+    padding: 3rem 1rem;
+  }
+
+  .about-section,
+  .volunteer-section {
+    padding: 2rem 1rem;
+  }
+
+  .volunteer-form input,
+  .volunteer-form select,
+  .volunteer-form button {
+    font-size: 0.95rem;
+  }
+}
